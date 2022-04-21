@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Chameleon</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css' integrity='sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+  <div class="wordsTable">
+    <div class="tableTitle"></div>
+    <div id="tableItems"></div>
+  </div>
+
+  <div class="playerTable">
+    <div class="stepRow"></div>
+    <div class="playerRow">alooo</div>
+    <div class="playerRow"></div>
+  </div>
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js' integrity='sha512-iqRVtNB+t9O+epcgUTIPF+nklypcR23H1yR1NFM9kffn6/iBhZ9bTB6oKLaGMv8JE9UgjcwfBFg/eHC/VMws+g==' crossorigin='anonymous'></script>
+  <script src="./js/util.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    let socket = io();
+  </script>
+</body>
+</html>
