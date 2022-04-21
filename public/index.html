@@ -14,21 +14,26 @@
     <div id="tableItems"></div>
   </div>
 
-  <div class="playerTable">
+  <div id="playersTable">
     <div class="stepRow"></div>
-    <div class="playerRow">alooo</div>
-    <div class="playerRow"></div>
   </div>
 
 
 
-
+  <div class="popupContainer">
+    <div class="popup">
+      <div class="popupCenter">
+        <div class="popupPrompt">ur name ?</div>
+        <form id="popupInput">
+          <input type="text" name="playerName" maxlength="10" placeholder="my name is...">
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js' integrity='sha512-iqRVtNB+t9O+epcgUTIPF+nklypcR23H1yR1NFM9kffn6/iBhZ9bTB6oKLaGMv8JE9UgjcwfBFg/eHC/VMws+g==' crossorigin='anonymous'></script>
-  <script src="./js/util.js"></script>
-  <script src="./js/index.js"></script>
-  <script>
-    let socket = io();
-  </script>
+  <script src="./js/variables.js"></script>
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/admin.js"></script>
 </body>
 </html>

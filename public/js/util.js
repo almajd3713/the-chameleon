@@ -1,4 +1,4 @@
-function createNode(props) {
+export function createNode(props) {
   let node = document.createElement(props.tag || "div")
   if (props.className) {
     if (Array.isArray(props.className)) props.className.forEach(classN => node.classList.add(classN))
@@ -22,3 +22,4 @@ function createNode(props) {
   if (props.onClick) node.onclick = onClick
   return node
 }
+
